@@ -2,7 +2,7 @@ from conans import ConanFile
 
 
 class KainjowmustacheConan(ConanFile):
-    name = "Kainjow_Mustache"
+    name = "kainjow-mustache"
     version = "3.1"
     license = "Boost Software License - Version 1.0"
     url = "https://github.com/inexorgame/conan-kainjow-mustache"
