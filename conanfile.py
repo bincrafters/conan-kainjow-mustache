@@ -5,6 +5,8 @@ class KainjowmustacheConan(ConanFile):
     name = "Kainjow_Mustache"
     version = "3.1"
     license = "Boost Software License - Version 1.0"
+    url = "https://github.com/inexorgame/conan-kainjow-mustache"
+    description = "Mustache text templates for modern C++"
     # No settings/options are necessary, this is header only
     build_policy = "missing" # header only no need to build it
 
