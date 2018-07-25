@@ -4,7 +4,7 @@ import os
 
 class KainjowmustacheConan(ConanFile):
     name = "kainjow-mustache"
-    version = "3.1"
+    version = "3.2.1"
     license = "Boost Software License - Version 1.0"
     url = "https://github.com/inexorgame/conan-kainjow-mustache"
     homepage = "https://github.com/kainjow/Mustache"
@@ -16,7 +16,7 @@ class KainjowmustacheConan(ConanFile):
 
     def source(self):
         archive_url = "https://github.com/kainjow/Mustache/archive/v{!s}.zip".format(self.version)
-        tools.get(archive_url, sha256="f327d3b9c7313f7efcb1209f44fb10a5e65da27d28bbdc4e0518443c3add0dc5")
+        tools.get(archive_url, sha256="5c270706928a8e31b84960313a32d0942229fef17a6ab7a6a98abb3c21e55d6f")
         os.rename("Mustache-{!s}".format(self.version), self.source_subfolder)
 
     def package(self):
