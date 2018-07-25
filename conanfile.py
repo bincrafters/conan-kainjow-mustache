@@ -21,6 +21,7 @@ class KainjowmustacheConan(ConanFile):
 
     def package(self):
         self.copy("mustache.hpp", dst="include/kainjow", src=self.source_subfolder)
+        self.copy("LICENSE", dst=".", src=self.source_subfolder)
 
     def package_id(self):
         self.info.header_only()
