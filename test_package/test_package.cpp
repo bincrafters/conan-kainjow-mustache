@@ -1,9 +1,12 @@
+#include <cstdlib>
 #include <kainjow/mustache.hpp>
-
-using namespace kainjow::mustache;
 
 int main()
 {
-    mustache tmpl("");
-    return 0;
+    kainjow::mustache::mustache tmpl{"{{#employees}}{{name}}, {{/employees}}"};
+    kainjow::mustache::data employees{kainjow::mustache::data::type::list};
+    employees << kainjow::mustache::data{"name", "Steve"} << kainjow::mustache::data{"name", "Bill"};
+    tmpl.render({"employees", employees}, std::cout);
+
+    return EXIT_SUCCESS;
 }
