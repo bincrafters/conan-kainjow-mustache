@@ -13,19 +13,19 @@ class KainjowmustacheConan(ConanFile):
     author = "Inexor <info@inexor.org>"
     description = "Mustache text templates for modern C++"
     no_copy_source = True
-    source_subfolder = "Mustache"
+    _source_subfolder = "Mustache"
 
     def source(self):
         archive_url = "https://github.com/kainjow/Mustache/archive/v{!s}.zip".format(self.version)
         tools.get(archive_url, sha256="5c270706928a8e31b84960313a32d0942229fef17a6ab7a6a98abb3c21e55d6f")
-        os.rename("Mustache-{!s}".format(self.version), self.source_subfolder)
+        os.rename("Mustache-{!s}".format(self.version), self._source_subfolder)
 
     def build(self):
         pass
 
     def package(self):
-        self.copy("mustache.hpp", dst="include/kainjow", src=self.source_subfolder)
-        self.copy("LICENSE", dst=".", src=self.source_subfolder)
+        self.copy("mustache.hpp", dst="include/kainjow", src=self._source_subfolder)
+        self.copy("LICENSE", dst=".", src=self._source_subfolder)
 
     def package_id(self):
         self.info.header_only()

@@ -2,7 +2,7 @@
 
 | Bintray | Windows | Linux & macOS |
 |:--------:|:---------:|:-----------------:|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/kainjow-mustache%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/kainjow-mustache%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-kainjow-mustache?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-kainjow-mustache)|[![Build Status](https://travis-ci.org/bincrafters/conan-kainjow-mustache.svg)](https://travis-ci.org/bincrafters/conan-kainjow-mustache)|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/kainjow-mustache%3Abincrafters/images/download.svg)](https://bintray.com/bincrafters/public-conan/kainjow-mustache%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-kainjow-mustache?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-kainjow-mustache)|[![Build Status](https://travis-ci.com/bincrafters/conan-kainjow-mustache.svg)](https://travis-ci.com/bincrafters/conan-kainjow-mustache)|
 
 ## Conan.io Information
 
